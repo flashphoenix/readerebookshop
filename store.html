@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store - Readers Bookshop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="store-page">
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Readers Bookshop Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="store.html" class="active">Store</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Store</h1>
+                <p>Browse our extensive collection of educational materials and school supplies</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Search and Filter -->
+    <section class="store-controls">
+        <div class="container">
+            <div class="search-filter">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-options">
+                    <select name="sort" id="sort-products">
+                        <option value="default">Sort by: Default</option>
+                        <option value="name-asc">Name (A-Z)</option>
+                        <option value="name-desc">Name (Z-A)</option>
+                        <option value="price-low">Price (Low to High)</option>
+                        <option value="price-high">Price (High to Low)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="special-offers store-section">
+        <div class="container">
+            <h2>Special Offers</h2>
+            <div class="offers-gallery">
+                <div class="offer-item">
+                    <img src="special_offers.png" alt="Special Offer on Mathematics Textbooks">
+                    <div class="offer-details">
+                        <h3>Mathematics Textbooks Bundle</h3>
+                        <p>Get 15% off when you purchase a complete set of mathematics textbooks for any grade level.</p>
+                        <p class="price"><span class="original">KSh 5,500</span> <span class="discounted">KSh 4,675</span></p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                <div class="offer-item">
+                    <img src="special_offers.png" alt="Stationery Back to School Pack">
+                    <div class="offer-details">
+                        <h3>Back to School Stationery Pack</h3>
+                        <p>Complete stationery set including notebooks, pens, pencils, rulers, and more at a discounted price.</p>
+                        <p class="price"><span class="original">KSh 2,200</span> <span class="discounted">KSh 1,750</span></p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                <div class="offer-item">
+                    <img src="special_offers.png" alt="English Literature Set">
+                    <div class="offer-details">
+                        <h3>English Literature Set</h3>
+                        <p>Complete set of required reading texts for secondary school English literature at special prices.</p>
+                        <p class="price"><span class="original">KSh 3,800</span> <span class="discounted">KSh 3,200</span></p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Products Section -->
+    <section class="new-products store-section">
+        <div class="container">
+            <h2>New Products</h2>
+            <div class="products-gallery">
+                <div class="product-item">
+                    <div class="product-badge">New</div>
+                    <img src="special_offers.png" alt="2025 Edition Chemistry Textbook">
+                    <div class="product-details">
+                        <h3>2025 Edition Chemistry Textbook</h3>
+                        <p>Updated chemistry textbook aligned with the latest curriculum changes for secondary schools.</p>
+                        <p class="price">KSh 1,250</p>
+                        <div class="stock in-stock">In Stock</div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-badge">New</div>
+                    <img src="special_offers.png" alt="Digital Learning Tablet">
+                    <div class="product-details">
+                        <h3>Digital Learning Tablet</h3>
+                        <p>Educational tablet preloaded with learning apps and resources for primary and secondary students.</p>
+                        <p class="price">KSh 12,500</p>
+                        <div class="stock limited-stock">Limited Stock</div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-badge">New</div>
+                    <img src="special_offers.png" alt="Ergonomic Student Backpack">
+                    <div class="product-details">
+                        <h3>Ergonomic Student Backpack</h3>
+                        <p>Specially designed backpack with padded compartments for books and laptop, with back support.</p>
+                        <p class="price">KSh 2,800</p>
+                        <div class="stock in-stock">In Stock</div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section class="product-categories">
+        <div class="container">
+            <h2>Product Categories</h2>
+            
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">All Products</button>
+                <button class="tab-btn" data-category="primary">Primary School Books</button>
+                <button class="tab-btn" data-category="secondary">Secondary School Books</button>
+                <button class="tab-btn" data-category="stationery">Stationery & Accessories</button>
+                <button class="tab-btn" data-category="fun">Fun Corner (Toys & Gadgets)</button>
+            </div>
+
+            <div class="product-grid">
+                <!-- Primary School Books -->
+                <div class="product-item" data-category="primary">
+                    <img src="special_offers.png" alt="Grade 3 Mathematics Textbook">
+                    <div class="product-details">
+                        <h3>Grade 3 Mathematics Textbook</h3>
+                        <p>Comprehensive mathematics textbook for Grade 3 students, aligned with the Kenyan curriculum.</p>
+                        <p class="price">KSh 750</p>
+                        <div class="stock in-stock">In Stock</div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="primary">
+                    <img src="special_offers.png" alt="Grade 5 English Workbook">
+                    <div class="product-details">
+                        <h3>Grade 5 English Workbook</h3>
+                        <p>Interactive workbook with exercises and activities to improve English language skills.</p>
+                        <p class="price">KSh 550</p>
+                        <div class="stock in-stock">In Stock</div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="primary">
+                    <img src="special_offers.png" alt="Grade 6 Science Textbook">
+                    <div class="product-details">
+                        <h3>Grade 6 Science Textbook</h3>
+                        <p>Colorful and engaging science textbook with illustrations and practical experiments.</p>
+                        <p class="price">KSh 850</p>
+                        <div class="stock in-stock">In Stock</div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Secondary School Books -->
+                <div class="product-item" data-category="secondary">
+                    <img src="special_offers.png" alt="Form 2 Physics Textbook">
+                    <div class="product-details">
+                        <h3>Form 2 Physics Textbook</h3>
+                        <p>Comprehensive physics textbook with detailed explanations and problem-solving examples.</p>
+                        <p class="price">KSh 1,200</p>
+                        <div class="stock in-stock">In Stock</div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="secondary">
+                    <img src="special_offers.png" alt="Form 3 Geography Textbook">
+                    <div class="product-details">
+                        <h3>Form 3 Geography Textbook</h3>
+                        <p>Geography textbook with detailed maps, diagrams, and case studies for secondary students.</p>
+                        <p class="price">KSh 1,100</p>
+                        <div class="stock in-stock">In Stock</div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="secondary">
+                    <img src="special_offers.png" alt="Form 4 Chemistry Revision Guide">
+                    <div class="product-details">
+                        <h3>Form 4 Chemistry Revision Guide</h3>
+                        <p>Comprehensive revision guide with practice questions and answers for KCSE preparation.</p>
+                        <p class="price">KSh 950</p>
+                        <div class="stock limited-stock">Limited Stock</div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Stationery & Accessories -->
+                <div class="product-item" data-category="stationery">
+                    <img src="special_offers.png" alt="Premium Mathematical Set">
+                    <div class="product-details">
+                        <h3>Premium Mathematical Set</h3>
+                        <p>High-quality mathematical set with precision instruments for technical drawing and geometry.</p>
+                        <p class="price">KSh 450</p>
+                        <div class="stock in-stock">In Stock</div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="stationery">
+                    <img src="special_offers.png" alt="Scientific Calculator">
+                    <div class="product-details">
+                        <h3>Scientific Calculator</h3>
+                        <p>Advanced scientific calculator suitable for secondary school mathematics and science subjects.</p>
+                        <p class="price">KSh 1,500</p>
+                        <div class="stock in-stock">In Stock</div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="stationery">
+                    <img src="special_offers.png" alt="Hardcover Notebooks (Pack of 5)">
+                    <div class="product-details">
+                        <h3>Hardcover Notebooks (Pack of 5)</h3>
+                        <p>Durable hardcover notebooks with high-quality paper, perfect for note-taking and assignments.</p>
+                        <p class="price">KSh 850</p>
+                        <div class="stock in-stock">In Stock</div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Fun Corner -->
+                <div class="product-item" data-category="fun">
+                    <img src="special_offers.png" alt="Educational World Map Puzzle">
+                    <div class="product-details">
+                        <h3>Educational World Map Puzzle</h3>
+                        <p>Interactive puzzle that helps students learn geography while having fun assembling the world map.</p>
+                        <p class="price">KSh 1,200</p>
+                        <div class="stock in-stock">In Stock</div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="fun">
+                    <img src="special_offers.png" alt="Mathematics Learning Game">
+                    <div class="product-details">
+                        <h3>Mathematics Learning Game</h3>
+                        <p>Fun board game that reinforces mathematical concepts and problem-solving skills.</p>
+                        <p class="price">KSh 980</p>
+                        <div class="stock in-stock">In Stock</div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="product-item" data-category="fun">
+                    <img src="special_offers.png" alt="Science Experiment Kit">
+                    <div class="product-details">
+                        <h3>Science Experiment Kit</h3>
+                        <p>Hands-on science kit with materials and instructions for conducting safe and educational experiments.</p>
+                        <p class="price">KSh 1,850</p>
+                        <div class="stock limited-stock">Limited Stock</div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <button class="prev-page"><i class="fas fa-chevron-left"></i></button>
+                <div class="page-numbers">
+                    <button class="page-number active">1</button>
+                    <button class="page-number">2</button>
+                    <button class="page-number">3</button>
+                    <span>...</span>
+                    <button class="page-number">10</button>
+                </div>
+                <button class="next-page"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Readers Bookshop Logo">
+                    <p>Your trusted partner for educational materials in Kenya</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="store.html">Store</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Kamangu Area, Kikuyu, Kenya</p>
+                    <p><i class="fas fa-phone"></i> Phone: +254 xxx xxx xxx</p>
+                    <p><i class="fas fa-envelope"></i> Email: info@readersbookshop.co.ke</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100085842870943" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Readers Bookshop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

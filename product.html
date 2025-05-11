@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Readers Bookshop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="product-page">
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Readers Bookshop Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="store.html" class="active">Store</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="#">Mathematics Textbooks</a></li>
+                <li class="current">Grade 5 Mathematics Textbook</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-wrapper">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="special_offers.png" alt="Grade 5 Mathematics Textbook" id="main-product-image">
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <img src="special_offers.png" alt="Grade 5 Mathematics Textbook - Front Cover" class="thumbnail active" onclick="changeImage(this)">
+                        <img src="special_offers.png" alt="Grade 5 Mathematics Textbook - Back Cover" class="thumbnail" onclick="changeImage(this)">
+                        <img src="special_offers.png" alt="Grade 5 Mathematics Textbook - Table of Contents" class="thumbnail" onclick="changeImage(this)">
+                        <img src="special_offers.png" alt="Grade 5 Mathematics Textbook - Sample Page" class="thumbnail" onclick="changeImage(this)">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <h1>Grade 5 Mathematics Textbook</h1>
+                    <div class="product-meta">
+                        <div class="stock in-stock">In Stock</div>
+                        <div class="product-id">Product ID: MATH-G5-2025</div>
+                    </div>
+                    
+                    <div class="product-price">
+                        <span class="current-price">KSh 850</span>
+                        <span class="old-price">KSh 950</span>
+                        <span class="discount">10% Off</span>
+                    </div>
+                    
+                    <div class="product-description">
+                        <h3>Description</h3>
+                        <p>This comprehensive Grade 5 Mathematics Textbook is designed in accordance with the latest Kenyan curriculum requirements, providing students with a solid foundation in mathematical concepts and problem-solving skills.</p>
+                        
+                        <p>The textbook features colorful illustrations, clear explanations, and numerous examples to make complex mathematical concepts accessible and engaging for young learners. Each chapter includes practice exercises, challenging problems, and real-life applications to reinforce learning.</p>
+                        
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Aligned with the current Kenyan curriculum</li>
+                            <li>Step-by-step explanations of mathematical concepts</li>
+                            <li>Numerous practice exercises with varying difficulty levels</li>
+                            <li>Colorful illustrations and diagrams</li>
+                            <li>Real-life applications of mathematical concepts</li>
+                            <li>End-of-chapter assessments</li>
+                            <li>Answers to selected exercises</li>
+                        </ul>
+                        
+                        <h3>Specifications</h3>
+                        <table class="specifications">
+                            <tr>
+                                <td>Publisher</td>
+                                <td>Kenya Educational Publishers</td>
+                            </tr>
+                            <tr>
+                                <td>Edition</td>
+                                <td>2025 Edition</td>
+                            </tr>
+                            <tr>
+                                <td>Language</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td>Number of Pages</td>
+                                <td>256</td>
+                            </tr>
+                            <tr>
+                                <td>Format</td>
+                                <td>Paperback</td>
+                            </tr>
+                            <tr>
+                                <td>Dimensions</td>
+                                <td>21 x 27 cm</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>978-1-234567-89-0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantity:</label>
+                            <div class="quantity-controls">
+                                <button class="decrease-quantity" onclick="decreaseQuantity()">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="20">
+                                <button class="increase-quantity" onclick="increaseQuantity()">+</button>
+                            </div>
+                        </div>
+                        
+                        <button class="btn add-to-cart-large">Add to Cart</button>
+                        <button class="btn buy-now">Buy Now</button>
+                    </div>
+                    
+                    <div class="product-meta-footer">
+                        <div class="delivery-info">
+                            <i class="fas fa-truck"></i>
+                            <span>Delivery available in Kamangu and surrounding areas</span>
+                        </div>
+                        <div class="return-policy">
+                            <i class="fas fa-undo"></i>
+                            <span>7-day return policy for unopened items</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="related-products">
+        <div class="container">
+            <h2>You May Also Like</h2>
+            <div class="products-gallery">
+                <div class="product-item">
+                    <img src="special_offers.png" alt="Grade 5 English Textbook">
+                    <div class="product-details">
+                        <h3>Grade 5 English Textbook</h3>
+                        <p>Comprehensive English language textbook for Grade 5 students.</p>
+                        <p class="price">KSh 850</p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="special_offers.png" alt="Grade 5 Science Textbook">
+                    <div class="product-details">
+                        <h3>Grade 5 Science Textbook</h3>
+                        <p>Engaging and informative science textbook with practical activities.</p>
+                        <p class="price">KSh 875</p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="special_offers.png" alt="Mathematics Exercise Book">
+                    <div class="product-details">
+                        <h3>Mathematics Exercise Book</h3>
+                        <p>Additional practice exercises for Grade 5 mathematics concepts.</p>
+                        <p class="price">KSh 450</p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="special_offers.png" alt="Grade 5 Complete Textbook Set">
+                    <div class="product-details">
+                        <h3>Grade 5 Complete Textbook Set</h3>
+                        <p>Complete set of all required textbooks for Grade 5 students.</p>
+                        <p class="price"><span class="original">KSh 4,200</span> <span class="discounted">KSh 3,800</span></p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <a href="product.html" class="view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Auto-Scrolling Gallery -->
+    <section class="scrolling-offers">
+        <div class="container">
+            <h2>Current Promotions</h2>
+            <div class="scrolling-container">
+                <div class="scrolling-wrapper">
+                    <div class="scroll-item">
+                        <img src="special_offers.png" alt="Science Lab Equipment">
+                        <h3>Science Lab Equipment - 20% Off</h3>
+                        <a href="store.html" class="btn shop-now small">Shop Now</a>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="special_offers.png" alt="Dictionaries">
+                        <h3>Dictionaries & Reference Books - Buy 1, Get 1 at 50% Off</h3>
+                        <a href="store.html" class="btn shop-now small">Shop Now</a>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="special_offers.png" alt="Notebooks">
+                        <h3>Premium Notebooks - Pack of 10 at Special Price</h3>
+                        <a href="store.html" class="btn shop-now small">Shop Now</a>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="special_offers.png" alt="Art Supplies">
+                        <h3>Art Supplies Kit - Complete Package for Creative Students</h3>
+                        <a href="store.html" class="btn shop-now small">Shop Now</a>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="special_offers.png" alt="School Bags">
+                        <h3>Durable School Bags - New Designs Available</h3>
+                        <a href="store.html" class="btn shop-now small">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Readers Bookshop Logo">
+                    <p>Your trusted partner for educational materials in Kenya</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="store.html">Store</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Kamangu Area, Kikuyu, Kenya</p>
+                    <p><i class="fas fa-phone"></i> Phone: +254 xxx xxx xxx</p>
+                    <p><i class="fas fa-envelope"></i> Email: info@readersbookshop.co.ke</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100085842870943" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Readers Bookshop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function changeImage(element) {
+            // Get the main image element
+            const mainImage = document.getElementById('main-product-image');
+            
+            // Change the source to the clicked thumbnail
+            mainImage.src = element.src;
+            mainImage.alt = element.alt;
+            
+            // Remove active class from all thumbnails
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            
+            // Add active class to clicked thumbnail
+            element.classList.add('active');
+        }
+        
+        function increaseQuantity() {
+            const quantityInput = document.getElementById('quantity');
+            const currentValue = parseInt(quantityInput.value);
+            if (currentValue < parseInt(quantityInput.max)) {
+                quantityInput.value = currentValue + 1;
+            }
+        }
+        
+        function decreaseQuantity() {
+            const quantityInput = document.getElementById('quantity');
+            const currentValue = parseInt(quantityInput.value);
+            if (currentValue > parseInt(quantityInput.min)) {
+                quantityInput.value = currentValue - 1;
+            }
+        }
+    </script>
+</body>
+</html>
